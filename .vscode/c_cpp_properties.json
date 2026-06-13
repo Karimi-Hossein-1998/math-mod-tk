@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "J:/projects/",
+                    "J:/projects/**",
+                    "J:/projects/math-mod-tk/",
+                    "J:/projects/math-mod-tk/**",
+                    "J:/projects/math-mod-tk/includes/",
+                    "J:/projects/math-mod-tk/includes/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

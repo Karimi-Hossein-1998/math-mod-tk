@@ -1,0 +1,8 @@
+Persian Article:
+
+mu1 = {-0.2, 0.0, 0.2}
+mu2 = {mu1, -mu1}
+gamma1 = {0.05, 0.1}
+gamma2 = {0.05, 0.1}
+k_intra = {0.01, ... , 1.0} 10 values
+k_inter = {0.01, k_intra}
