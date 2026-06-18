@@ -28,14 +28,10 @@ It is made in two main parts:
         7. [network](#network)
             1. [Function List](#function-list)
         8. [solvers](#solvers)
-        9. [typedefs](#typedefs)
-        10. [utility](#utility)
+        9. [statistics](#statistics)
+        10. [typedefs](#typedefs)
+        11. [utility](#utility)
     5. [Compilation Notes](#compilation-notes)
-
-```text
-#  - [typedefs](#typedefs)
-#  - [utility](#utility)
-```
 
 ## [Core Practices](includes/typedefs/header.hpp)
 
@@ -364,6 +360,9 @@ includes/
 │           ├─ rk3-solver.hpp
 │           ├─ rk4-solver.hpp
 │           └─ rk4-variants.hpp
+├─ statistics/
+│  ├─ statistics.hpp
+│  └─ statistics-extended.hpp
 ├─ typedefs/
 │  ├─ complex.hpp
 │  └─ header.hpp
@@ -687,6 +686,10 @@ The solvers are the core components of the library for solving the mathematical 
 2. **DDE solvers**
     1. [constant delay multistep solvers](docs/includes.solvers/DDE/DDE-constant-delay.md)
 
+### statistics
+
+Statistics is a collection of functions for computing various statistical measures and properties of data, which can be useful for analyzing the results of simulations or for processing input data. This module includes functions for computing mean, variance, standard deviation, correlation, and other statistical metrics. For further details please refer to [statistics.md](docs/includes.statistics/statistics.md).
+
 ### typedefs
 
 All *types*, *aliases*, or important declarations and *global* variable are meant to be done within this folder, [`header.hpp`](includes/typedefs/header.hpp) is the main *header file* for this project. Also all `#include`s that are necessary for general usage are provided there (if you need a specific `#include` that has no usage outside of the module you defined it is better to keep that inside the module, otherwise add it to the `header.hpp` file). The `complex.hpp` file contains the definition for complex numbers and related operations (it is not a serious part of the project yet). You may add your own type definitions, aliases, or global variables to these files as needed.
@@ -721,3 +724,12 @@ OR
 ```bash
 g++ -O3 -pthread -std=c++23 -funroll-loops -ffast-math -static -flto code.cpp -o executable
 ```
+
+OR
+
+```bash
+g++ -O3 -std=c++23 -I includes/ code.cpp -o executable
+./executable
+```
+
+OR any other flag and/or style of compilation you would like. The project is simple enough that I do not see a need for the use of tools like `CMake` or `Makefile` for compilation, but if you think it would be better to have one, please feel free to add it. (Please follow the same style and aesthetic while adding/contributing to the project.)
