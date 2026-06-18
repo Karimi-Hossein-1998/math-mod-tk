@@ -6,4 +6,4 @@
 - [ ] Create a comprehensive test suite to cover all edge cases.
 - [ ] Set up continuous integration and deployment pipelines.
 - [ ] Check for the sparse implementations and fill in the missing parts.
-- [ ] Update the README file to reflect the latest changes in the project.
+- [x] Update the README file to reflect the latest changes in the project.
