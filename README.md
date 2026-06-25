@@ -11,13 +11,14 @@ It is made in two main parts:
 
 1. [Mathematical Modelling Framework](#mathematical-modelling-framework)
     1. [Table of Contents](#table-of-contents)
-    2. [Core Practices](#core-practices)
-    3. [Core Definitions and Notations](#core-definitions-and-notations)
+    2. [todo](#todo)
+    3. [Core Practices](#core-practices)
+    4. [Core Definitions and Notations](#core-definitions-and-notations)
         1. [`#include` Management Policy](#include-management-policy)
         2. [Numerics](#numerics)
         3. [Aliases and Abbreviations](#aliases-and-abbreviations)
         4. [`struct`s For Data-Structure](#structs-for-data-structure)
-    4. [The Library (`includes`)](#the-library-includes)
+    5. [The Library (`includes`)](#the-library-includes)
         1. [Initializers](#initializers)
         2. [interpolators](#interpolators)
         3. [linalg](#linalg)
@@ -31,7 +32,17 @@ It is made in two main parts:
         9. [statistics](#statistics)
         10. [typedefs](#typedefs)
         11. [utility](#utility)
-    5. [Compilation Notes](#compilation-notes)
+    6. [Compilation Notes](#compilation-notes)
+
+## todo
+
+- [x] Finish writing the documentations for the whole project.
+- [ ] Review the codebase for potential optimizations.
+- [ ]  Re-write the `Examples` directory with more explanatory examples and better showcase of the features.
+- [ ] Create a comprehensive test suite to cover all edge cases.
+- [ ] Set up continuous integration and deployment pipelines.
+- [ ] Check for the sparse implementations and fill in the missing parts.
+- [x] Update the README file to reflect the latest changes in the project.
 
 ## [Core Practices](includes/typedefs/header.hpp)
 
